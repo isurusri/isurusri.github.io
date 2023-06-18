@@ -1,37 +1,30 @@
 export default [
     {
         year: 'Today',
-        title: 'YouTube Content Creator',
-        duration: '6 years',
+        title: 'Software Engineer @ IFS R&D International',
+        duration: 'From May 2022',
         details:
-            'My humble attempt at building my version of the digital world one step at a time by documenting my coding journey and creating software engineering and computer science content to help those coming behind me.',
+            'My multifaceted contributions encompassed enhancing system performance, continuous learning and application of new technologies, effective communication with non-technical stakeholders, and leadership as a Scrum Master. These efforts collectively drove efficiency, quality, and success within the software development projects I was involved in.',
     },
     {
-        year: 'Today',
-        title: 'Solo Indie Developer',
+        year: 'May 2022',
+        title: 'Software Engineer @ Infor - GT Nexus',
+        duration: 'November 2021',
+        details:
+            "As a Java developer, I proficiently utilized the Spring Framework, Hibernate ORM, and RESTful web services to develop and maintain robust and scalable applications. These technologies allowed for streamlined development and ensured adherence to industry best practices.",
+    },
+    {
+        year: 'November 2021',
+        title: 'Software Engineer @ Enforcia',
+        duration: 'November 2020',
+        details:
+            'As a full-stack software engineer, I have successfully utilized Java and React technologies to deliver end-to-end solutions. From developing robust backend systems with Java frameworks to creating dynamic and responsive user interfaces with React, I have demonstrated expertise across the entire software stack. My focus on code quality, testing, and collaboration has resulted in reliable and efficient software solutions.',
+    },
+    {
+        year: '2017',
+        title: "Bachelor's Degree In Cyber Security",
         duration: '4 years',
         details:
-            "I'm a solo indie developer building software for myself and clients to showcase on YouTube. All coding projects are built from the ground up, from planning and designing all the way to solving real-life problems with code.",
-    },
-    {
-        year: '2019',
-        title: 'Software Engineer',
-        duration: '2 years',
-        details:
-            'I helped build an enterprise application for a Fortune 500 company in an Agile team setting. Our tech stack consisted of TypeSciprt, Angular, Java, Gradle, and a handful of other languages and tools.',
-    },
-    {
-        year: '2018',
-        title: "Bachelor's Degree in Computer Science",
-        duration: '5 years',
-        details:
-            'I pursued the knowledge that a computer science degree had to offer. I learned about computer architecture, computer science theory, an array of programming, and aspects of artificial intelligence.',
-    },
-    {
-        year: '2013',
-        title: 'First Line of Code',
-        duration: 'the beginning',
-        details:
-            "I wrote my first line of real code that started this journey into digital craftsmanship that I never could've imagined, especially as someone who never saw themselves as anything other than a blue collar worker.",
-    },
+            'My pursuit of a Bachelor\'s Degree in Cyber Security has provided me with a well-rounded education in the field. I have gained expertise in security principles, developed technical skills in various areas of cybersecurity, and cultivated important communication and critical thinking abilities. I am well-prepared to contribute to the protection of digital assets and the ongoing battle against cyber threats.',
+    }
 ]
