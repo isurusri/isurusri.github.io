@@ -3,9 +3,9 @@ import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
-    const form = useRef();
+    const form:any = useRef(null);
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: any) => {
         e.preventDefault();
 
         emailjs
@@ -13,18 +13,14 @@ function Contact() {
                 import.meta.env.VITE_MAIL_TEMPLATE_ID,
                 import.meta.env.VITE_MAIL_SERVICE_ID,
                 form.current,
-                import.meta.env.VITE_MAIL_PUBLIC_KEY
-            )
-            .then(
-                (result) => {
-                    alert('message sent successfully...');
-                    console.log(result.text);
-                },
-                (error) => {
-                    console.log(error.text);
-                }
-            );
-        e.target.reset();
+                import.meta.env.VITE_MAIL_PUBLIC_KEY)
+            .then((result) => {
+                alert('message sent successfully...');
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset()
     };
 
     return (
@@ -35,7 +31,7 @@ function Contact() {
                     onSubmit={sendEmail}
                     className="flex flex-col w-full md:w-7/12"
                 >
-                    <Title>Contact</Title>
+                    <Title children={"Contact"} id={"contact_id"}/>
                     <input
                         type="text"
                         name="user_name"
@@ -51,7 +47,7 @@ function Contact() {
                     <textarea
                         name="message"
                         placeholder="Message"
-                        rows="10"
+                        rows={10}
                         className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none"
                     />
                     <button
