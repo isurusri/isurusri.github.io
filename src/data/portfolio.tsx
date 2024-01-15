@@ -7,11 +7,11 @@ export default [
     link: "https://github.com/isurusri/Spring-Boot-Microservices-",
   },
   {
-    title: "Blog App",
+    title: "Monopoly Tracker",
     imgUrl:
-      "https://cdn4.wpbeginner.com/wp-content/uploads/2018/07/whatisblog.png",
-    stack: ["NodeJs", "MongoDB", "React"],
-    link: "https://github.com/isurusri/node-crash-BlogApp",
+      "https://www.pngkey.com/png/detail/43-436512_monopoly-vectors-monopoly-vector-file.png",
+    stack: ["NodeJs", "Bootstrap", "React"],
+    link: "https://www.sricode.com/monopolytracker/",
   },
   {
     title: "ToDo App",
