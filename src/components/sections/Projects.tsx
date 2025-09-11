@@ -54,19 +54,27 @@ const Projects = () => {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2,
+                staggerChildren: 0.1,
+                delayChildren: 0.2,
             },
         },
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 30 },
+        hidden: {
+            opacity: 0
+        },
         visible: {
             opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.6,
-            },
+        },
+    };
+
+    const projectVariants = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
         },
     };
 
@@ -96,7 +104,8 @@ const Projects = () => {
                         {projects.filter(project => project.featured).map((project, index) => (
                             <motion.div
                                 key={project.title}
-                                variants={itemVariants}
+                                variants={projectVariants}
+                                whileHover={{ y: -5 }}
                                 className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
                                     }`}
                             >

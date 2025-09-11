@@ -22,19 +22,27 @@ const About = () => {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2,
+                staggerChildren: 0.15,
+                delayChildren: 0.1,
             },
         },
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 30 },
+        hidden: {
+            opacity: 0
+        },
         visible: {
             opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.6,
-            },
+        },
+    };
+
+    const skillVariants = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
         },
     };
 
@@ -119,16 +127,24 @@ const About = () => {
 
                     {/* Skills Grid */}
                     <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-16">
-                        {skills.map((skill) => (
+                        {skills.map((skill, index) => (
                             <motion.div
                                 key={skill.name}
-                                whileHover={{ scale: 1.05, y: -5 }}
-                                className="bg-primary-dark/50 p-6 rounded-xl border border-primary-medium/50 hover:border-primary-accent/50 transition-all duration-300 group"
+                                variants={skillVariants}
+                                whileHover={{
+                                    scale: 1.05,
+                                    y: -8,
+                                    boxShadow: "0 10px 25px rgba(70, 138, 154, 0.2)"
+                                }}
+                                className="bg-primary-dark/50 p-6 rounded-xl border border-primary-medium/50 hover:border-primary-accent/50 transition-all duration-500 group"
                             >
                                 <div className="flex flex-col items-center text-center space-y-3">
-                                    <div className="p-3 bg-primary-accent/20 rounded-lg group-hover:bg-primary-accent/30 transition-colors duration-300">
+                                    <motion.div
+                                        className="p-3 bg-primary-accent/20 rounded-lg group-hover:bg-primary-accent/30 transition-colors duration-300"
+                                        whileHover={{ rotate: 5 }}
+                                    >
                                         <skill.icon className="w-6 h-6 text-primary-accent" />
-                                    </div>
+                                    </motion.div>
                                     <h3 className="font-semibold text-primary-light text-sm">
                                         {skill.name}
                                     </h3>

@@ -151,19 +151,27 @@ const Contact = () => {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2,
+                staggerChildren: 0.15,
+                delayChildren: 0.1,
             },
         },
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 30 },
+        hidden: {
+            opacity: 0
+        },
         visible: {
             opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.6,
-            },
+        },
+    };
+
+    const formVariants = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
         },
     };
 
@@ -273,7 +281,7 @@ const Contact = () => {
                         </motion.div>
 
                         {/* Contact Form */}
-                        <motion.div variants={itemVariants}>
+                        <motion.div variants={formVariants}>
                             {/* Status Messages */}
                             {submitStatus === 'success' && (
                                 <motion.div

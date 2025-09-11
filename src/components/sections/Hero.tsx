@@ -142,16 +142,23 @@ const Hero = () => {
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-8">
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                        duration: 1.2,
+                        ease: "easeOut"
+                    }}
                     className="space-y-8"
                 >
                     {/* Greeting */}
                     <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, duration: 0.6 }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                            delay: 0.3,
+                            duration: 0.8,
+                            ease: "easeOut"
+                        }}
                         className="text-primary-accent text-lg md:text-xl font-medium"
                     >
                         Hello, I&apos;m
@@ -159,20 +166,50 @@ const Hero = () => {
 
                     {/* Name */}
                     <motion.h1
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, duration: 0.8 }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                            delay: 0.5,
+                            duration: 1.0,
+                            ease: "easeOut"
+                        }}
                         className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-primary-light"
                     >
-                        <span className="block">Isuru Abeykoon</span>
-                        <span className="block text-primary-accent">Developer</span>
+                        <motion.span
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{
+                                delay: 0.7,
+                                duration: 0.8,
+                                ease: "easeOut"
+                            }}
+                            className="block"
+                        >
+                            Isuru Abeykoon
+                        </motion.span>
+                        <motion.span
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{
+                                delay: 0.9,
+                                duration: 0.8,
+                                ease: "easeOut"
+                            }}
+                            className="block text-primary-accent"
+                        >
+                            Developer
+                        </motion.span>
                     </motion.h1>
 
                     {/* Description */}
                     <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.6, duration: 0.6 }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                            delay: 1.1,
+                            duration: 0.8,
+                            ease: "easeOut"
+                        }}
                         className="text-lg md:text-xl text-primary-light/80 max-w-3xl mx-auto leading-relaxed"
                     >
                         I build scalable, intelligent, and reliable software systems that transform complex challenges into impactful, real-world solutions.
@@ -180,29 +217,48 @@ const Hero = () => {
 
                     {/* CTA Buttons */}
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.8, duration: 0.6 }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                            delay: 1.3,
+                            duration: 0.8,
+                            ease: "easeOut"
+                        }}
                         className="flex flex-col sm:flex-row gap-4 justify-center items-center"
                     >
                         <motion.button
-                            whileHover={{ scale: 1.05 }}
+                            whileHover={{
+                                scale: 1.05,
+                                boxShadow: "0 15px 35px rgba(70, 138, 154, 0.4)",
+                                y: -2
+                            }}
                             whileTap={{ scale: 0.95 }}
                             onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
-                            className="bg-primary-accent hover:bg-primary-accent/90 text-primary-dark px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+                            className="bg-primary-accent hover:bg-primary-accent/90 text-primary-dark px-8 py-3 rounded-lg font-semibold transition-all duration-500 shadow-lg hover:shadow-xl"
                         >
                             View My Work
                         </motion.button>
 
                         <motion.button
-                            whileHover={{ scale: 1.05 }}
+                            whileHover={{
+                                scale: 1.05,
+                                boxShadow: "0 15px 35px rgba(70, 138, 154, 0.3)",
+                                y: -2
+                            }}
                             whileTap={{ scale: 0.95 }}
                             onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-                            className="border-2 border-primary-accent text-primary-accent hover:bg-primary-accent hover:text-primary-dark px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center space-x-2"
+                            className="border-2 border-primary-accent text-primary-accent hover:bg-primary-accent hover:text-primary-dark px-8 py-3 rounded-lg font-semibold transition-all duration-500 flex items-center space-x-2 group"
                         >
                             <motion.div
-                                animate={{ opacity: [1, 0, 1] }}
-                                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                                animate={{
+                                    opacity: [1, 0.4, 1],
+                                    scale: [1, 1.3, 1]
+                                }}
+                                transition={{
+                                    duration: 2,
+                                    repeat: Infinity,
+                                    ease: "easeInOut"
+                                }}
                                 className="w-2 h-2 bg-green-500 rounded-full"
                             />
                             <span>Get In Touch</span>
@@ -211,22 +267,37 @@ const Hero = () => {
 
                     {/* Social Links */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 1, duration: 0.6 }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                            delay: 1.5,
+                            duration: 0.8,
+                            ease: "easeOut"
+                        }}
                         className="flex justify-center space-x-6 pt-8"
                     >
                         {[
                             { icon: Github, href: 'https://github.com/isurusri', label: 'GitHub' },
                             { icon: Linkedin, href: 'https://www.linkedin.com/in/isuru-abeykoon-sri1996/', label: 'LinkedIn' },
                             { icon: Mail, href: 'mailto:isuru.srimal258@gmail.com', label: 'Email' },
-                        ].map(({ icon: Icon, href, label }) => (
+                        ].map(({ icon: Icon, href, label }, index) => (
                             <motion.a
                                 key={label}
                                 href={href}
-                                whileHover={{ scale: 1.2, rotate: 5 }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{
+                                    delay: 1.7 + (index * 0.1),
+                                    duration: 0.6,
+                                    ease: "easeOut"
+                                }}
+                                whileHover={{
+                                    scale: 1.2,
+                                    rotate: 5,
+                                    y: -5
+                                }}
                                 whileTap={{ scale: 0.9 }}
-                                className="text-primary-light hover:text-primary-accent transition-colors duration-300"
+                                className="text-primary-light hover:text-primary-accent transition-all duration-300 p-2 rounded-full hover:bg-primary-accent/10"
                                 aria-label={label}
                             >
                                 <Icon size={24} />
