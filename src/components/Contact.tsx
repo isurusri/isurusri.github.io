@@ -16,7 +16,7 @@ const Contact = () => {
         message: '',
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+    const [submitStatus, setSubmitStatus] = useState < 'idle' | 'success' | 'error' > ('idle');
     const [errorMessage, setErrorMessage] = useState('');
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -52,7 +52,7 @@ const Contact = () => {
                     `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
                 );
                 window.open(`mailto:isuru.srimal258@gmail.com?subject=${subject}&body=${body}`);
-                
+
                 setSubmitStatus('success');
                 setFormData({
                     name: '',
@@ -90,11 +90,11 @@ const Contact = () => {
             }
         } catch (error) {
             console.error('Error sending email:', error);
-            
+
             // Check for Gmail API errors and provide fallback
             let errorMsg = 'Failed to send message. Please try again or contact me directly.';
             let shouldFallback = false;
-            
+
             if (error instanceof Error) {
                 errorMsg = error.message;
                 // Check for Gmail API specific errors
@@ -120,7 +120,7 @@ const Contact = () => {
                     errorMsg = `EmailJS Error: Status ${error.status}`;
                 }
             }
-            
+
             // If Gmail API error, automatically fallback to mailto
             if (shouldFallback) {
                 const subject = encodeURIComponent(formData.subject);
@@ -128,7 +128,7 @@ const Contact = () => {
                     `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
                 );
                 window.open(`mailto:isuru.srimal258@gmail.com?subject=${subject}&body=${body}`);
-                
+
                 setSubmitStatus('success');
                 setFormData({
                     name: '',
@@ -138,7 +138,7 @@ const Contact = () => {
                 });
                 return;
             }
-            
+
             setSubmitStatus('error');
             setErrorMessage(errorMsg);
         } finally {
@@ -284,8 +284,8 @@ const Contact = () => {
                                     <CheckCircle className="w-5 h-5 text-green-500" />
                                     <div>
                                         <p className="text-green-500 font-medium">
-                                            {process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID === 'your_service_id' 
-                                                ? 'Opening your email client...' 
+                                            {process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID === 'your_service_id'
+                                                ? 'Opening your email client...'
                                                 : 'Message sent successfully! I\'ll get back to you soon.'
                                             }
                                         </p>
@@ -383,11 +383,10 @@ const Contact = () => {
                                     disabled={isSubmitting}
                                     whileHover={!isSubmitting ? { scale: 1.02 } : {}}
                                     whileTap={!isSubmitting ? { scale: 0.98 } : {}}
-                                    className={`w-full px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg flex items-center justify-center space-x-2 ${
-                                        isSubmitting
+                                    className={`w-full px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg flex items-center justify-center space-x-2 ${isSubmitting
                                             ? 'bg-primary-accent/50 text-primary-dark/50 cursor-not-allowed'
                                             : 'bg-primary-accent hover:bg-primary-accent/90 text-primary-dark hover:shadow-xl'
-                                    }`}
+                                        }`}
                                 >
                                     {isSubmitting ? (
                                         <>
