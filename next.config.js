@@ -32,6 +32,18 @@ const nextConfig = {
     // React strict mode
     reactStrictMode: true,
 
+    // Production optimizations
+    productionBrowserSourceMaps: false,
+    
+    // Webpack configuration to exclude problematic files
+    webpack: (config, { isServer }) => {
+        if (!isServer) {
+            // Exclude source maps and dev files from client bundle
+            config.devtool = false;
+        }
+        return config;
+    },
+
     // SWC minification is enabled by default in Next.js 15
 };
 

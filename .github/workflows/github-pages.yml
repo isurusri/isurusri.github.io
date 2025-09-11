@@ -38,6 +38,20 @@ jobs:
         env:
           NEXT_PUBLIC_SITE_URL: https://www.sricode.com
 
+      - name: Clean problematic files
+        run: |
+          echo "Cleaning problematic files..."
+          # Remove source maps and dev files
+          find out/ -name "*.map" -delete
+          find out/ -name "*.js.map" -delete
+          find out/ -name "*.css.map" -delete
+          # Remove large dev files
+          find out/ -name "*devtools*" -delete
+          find out/ -name "*node_modules*" -delete
+          # Remove any files larger than 2MB (except images)
+          find out/ -type f -size +2M ! -name "*.png" ! -name "*.jpg" ! -name "*.jpeg" ! -name "*.gif" ! -name "*.webp" -delete
+          echo "Cleanup completed"
+
       - name: Verify output directory
         run: |
           echo "Output directory contents:"
@@ -45,6 +59,8 @@ jobs:
           echo "Checking for problematic files:"
           find out/ -type l -ls || echo "No symlinks found"
           find out/ -name ".*" -type f | head -10 || echo "No hidden files found"
+          echo "File sizes:"
+          du -h out/ | sort -hr | head -10
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
