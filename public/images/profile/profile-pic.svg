@@ -1,0 +1,32 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="150" cy="150" r="150" fill="#541212"/>
+  
+  <!-- Inner circle for face -->
+  <circle cx="150" cy="130" r="80" fill="#EEEEEE"/>
+  
+  <!-- Hair -->
+  <path d="M 100 80 Q 150 50 200 80 Q 200 100 180 120 Q 150 110 120 120 Q 100 100 100 80 Z" fill="#0F0E0E"/>
+  
+  <!-- Face features -->
+  <!-- Eyes -->
+  <circle cx="130" cy="120" r="8" fill="#0F0E0E"/>
+  <circle cx="170" cy="120" r="8" fill="#0F0E0E"/>
+  
+  <!-- Nose -->
+  <ellipse cx="150" cy="140" rx="4" ry="6" fill="#0F0E0E"/>
+  
+  <!-- Mouth -->
+  <path d="M 135 160 Q 150 170 165 160" stroke="#0F0E0E" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Body/shirt -->
+  <rect x="120" y="210" width="60" height="80" rx="10" fill="#468A9A"/>
+  
+  <!-- Shirt details -->
+  <rect x="130" y="220" width="40" height="20" rx="5" fill="#EEEEEE"/>
+  <rect x="135" y="230" width="30" height="10" rx="2" fill="#0F0E0E"/>
+  
+  <!-- Arms -->
+  <ellipse cx="110" cy="250" rx="15" ry="40" fill="#EEEEEE"/>
+  <ellipse cx="190" cy="250" rx="15" ry="40" fill="#EEEEEE"/>
+</svg>

@@ -1,0 +1,58 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#0F0E0E"/>
+  <rect x="50" y="50" width="500" height="300" rx="8" fill="#541212"/>
+  
+  <!-- Header -->
+  <rect x="70" y="70" width="460" height="40" rx="4" fill="#468A9A"/>
+  <text x="80" y="90" fill="#EEEEEE" font-size="16" font-family="monospace">Monopoly Tracker</text>
+  
+  <!-- Game Board -->
+  <rect x="100" y="130" width="200" height="200" rx="8" fill="#EEEEEE" stroke="#0F0E0E" stroke-width="2"/>
+  
+  <!-- Board Properties -->
+  <rect x="100" y="130" width="25" height="200" fill="#FF6B6B"/>
+  <rect x="125" y="130" width="25" height="200" fill="#4ECDC4"/>
+  <rect x="150" y="130" width="25" height="200" fill="#45B7D1"/>
+  <rect x="175" y="130" width="25" height="200" fill="#96CEB4"/>
+  <rect x="200" y="130" width="25" height="200" fill="#FFEAA7"/>
+  <rect x="225" y="130" width="25" height="200" fill="#DDA0DD"/>
+  <rect x="250" y="130" width="25" height="200" fill="#98D8C8"/>
+  <rect x="275" y="130" width="25" height="200" fill="#F7DC6F"/>
+  
+  <!-- Board Labels -->
+  <text x="110" y="150" fill="#0F0E0E" font-size="8" font-family="monospace">GO</text>
+  <text x="135" y="150" fill="#0F0E0E" font-size="8" font-family="monospace">A1</text>
+  <text x="160" y="150" fill="#0F0E0E" font-size="8" font-family="monospace">A2</text>
+  <text x="185" y="150" fill="#0F0E0E" font-size="8" font-family="monospace">A3</text>
+  <text x="210" y="150" fill="#0F0E0E" font-size="8" font-family="monospace">A4</text>
+  <text x="235" y="150" fill="#0F0E0E" font-size="8" font-family="monospace">A5</text>
+  <text x="260" y="150" fill="#0F0E0E" font-size="8" font-family="monospace">A6</text>
+  <text x="285" y="150" fill="#0F0E0E" font-size="8" font-family="monospace">A7</text>
+  
+  <!-- Player Tokens -->
+  <circle cx="120" cy="200" r="8" fill="#FF6B6B"/>
+  <circle cx="140" cy="180" r="8" fill="#4ECDC4"/>
+  <circle cx="160" cy="220" r="8" fill="#45B7D1"/>
+  
+  <!-- Game Stats Panel -->
+  <rect x="320" y="130" width="200" height="200" rx="8" fill="#0F0E0E" stroke="#468A9A" stroke-width="2"/>
+  <text x="330" y="150" fill="#EEEEEE" font-size="14" font-family="monospace">Game Statistics</text>
+  
+  <!-- Player Stats -->
+  <rect x="330" y="160" width="180" height="30" rx="4" fill="#541212"/>
+  <text x="340" y="180" fill="#EEEEEE" font-size="12" font-family="monospace">Player 1: $1500</text>
+  
+  <rect x="330" y="200" width="180" height="30" rx="4" fill="#541212"/>
+  <text x="340" y="220" fill="#EEEEEE" font-size="12" font-family="monospace">Player 2: $1200</text>
+  
+  <rect x="330" y="240" width="180" height="30" rx="4" fill="#541212"/>
+  <text x="340" y="260" fill="#EEEEEE" font-size="12" font-family="monospace">Player 3: $1800</text>
+  
+  <!-- Properties Owned -->
+  <rect x="330" y="280" width="180" height="40" rx="4" fill="#541212"/>
+  <text x="340" y="300" fill="#EEEEEE" font-size="12" font-family="monospace">Properties Owned:</text>
+  <text x="340" y="315" fill="#468A9A" font-size="10" font-family="monospace">Park Place, Boardwalk, St. James</text>
+  
+  <!-- Tech Stack -->
+  <text x="80" y="350" fill="#468A9A" font-size="10" font-family="monospace">React • TypeScript • Vite • Real-time Updates</text>
+</svg>

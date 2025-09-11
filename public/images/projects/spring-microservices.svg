@@ -1,0 +1,51 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#0F0E0E"/>
+  <rect x="50" y="50" width="500" height="300" rx="8" fill="#541212"/>
+  
+  <!-- Header -->
+  <rect x="70" y="70" width="460" height="40" rx="4" fill="#468A9A"/>
+  <text x="80" y="90" fill="#EEEEEE" font-size="16" font-family="monospace">Spring Boot Microservices</text>
+  
+  <!-- Docker Containers -->
+  <rect x="80" y="130" width="100" height="80" rx="4" fill="#0F0E0E" stroke="#468A9A" stroke-width="2"/>
+  <text x="90" y="150" fill="#EEEEEE" font-size="12" font-family="monospace">User Service</text>
+  <text x="90" y="170" fill="#468A9A" font-size="10" font-family="monospace">Spring Boot</text>
+  <text x="90" y="185" fill="#468A9A" font-size="10" font-family="monospace">Port: 8081</text>
+  <circle cx="170" cy="140" r="3" fill="#468A9A"/>
+  
+  <rect x="200" y="130" width="100" height="80" rx="4" fill="#0F0E0E" stroke="#468A9A" stroke-width="2"/>
+  <text x="210" y="150" fill="#EEEEEE" font-size="12" font-family="monospace">Order Service</text>
+  <text x="210" y="170" fill="#468A9A" font-size="10" font-family="monospace">Spring Boot</text>
+  <text x="210" y="185" fill="#468A9A" font-size="10" font-family="monospace">Port: 8082</text>
+  <circle cx="290" cy="140" r="3" fill="#468A9A"/>
+  
+  <rect x="320" y="130" width="100" height="80" rx="4" fill="#0F0E0E" stroke="#468A9A" stroke-width="2"/>
+  <text x="330" y="150" fill="#EEEEEE" font-size="12" font-family="monospace">Payment Service</text>
+  <text x="330" y="170" fill="#468A9A" font-size="10" font-family="monospace">Spring Boot</text>
+  <text x="330" y="185" fill="#468A9A" font-size="10" font-family="monospace">Port: 8083</text>
+  <circle cx="410" cy="140" r="3" fill="#468A9A"/>
+  
+  <!-- Database -->
+  <rect x="440" y="130" width="80" height="80" rx="4" fill="#0F0E0E" stroke="#EEEEEE" stroke-width="2"/>
+  <text x="450" y="150" fill="#EEEEEE" font-size="12" font-family="monospace">MySQL</text>
+  <text x="450" y="170" fill="#EEEEEE" font-size="10" font-family="monospace">Database</text>
+  <text x="450" y="185" fill="#EEEEEE" font-size="10" font-family="monospace">Port: 3306</text>
+  
+  <!-- API Gateway -->
+  <rect x="80" y="230" width="120" height="60" rx="4" fill="#0F0E0E" stroke="#EEEEEE" stroke-width="2"/>
+  <text x="90" y="250" fill="#EEEEEE" font-size="12" font-family="monospace">API Gateway</text>
+  <text x="90" y="270" fill="#EEEEEE" font-size="10" font-family="monospace">Port: 8080</text>
+  
+  <!-- Docker Logo -->
+  <rect x="220" y="230" width="60" height="60" rx="4" fill="#0F0E0E" stroke="#468A9A" stroke-width="2"/>
+  <text x="230" y="250" fill="#468A9A" font-size="12" font-family="monospace">Docker</text>
+  <text x="230" y="270" fill="#468A9A" font-size="10" font-family="monospace">Container</text>
+  
+  <!-- Connection Lines -->
+  <line x1="180" y1="170" x2="200" y2="170" stroke="#468A9A" stroke-width="2"/>
+  <line x1="300" y1="170" x2="320" y2="170" stroke="#468A9A" stroke-width="2"/>
+  <line x1="420" y1="170" x2="440" y2="170" stroke="#468A9A" stroke-width="2"/>
+  
+  <!-- Tech Stack -->
+  <text x="80" y="320" fill="#468A9A" font-size="10" font-family="monospace">Java • Spring Boot • Docker • MySQL • Microservices</text>
+</svg>

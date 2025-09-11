@@ -4,24 +4,37 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
+    "type-check": "tsc --noEmit",
+    "postbuild": "next-sitemap",
+    "analyze": "ANALYZE=true next build",
+    "build:production": "./scripts/build-production.sh",
+    "preview": "next build && next start",
+    "clean": "rm -rf .next out node_modules/.cache",
+    "export": "next build && next export",
+    "deploy": "npm run build && touch out/.nojekyll"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.543.0",
+    "next": "15.5.3",
+    "next-sitemap": "^4.2.3",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.3"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

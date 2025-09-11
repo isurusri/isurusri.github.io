@@ -1,0 +1,36 @@
+<svg width="200" height="100" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- React Logo -->
+  <g transform="translate(10, 20)">
+    <circle cx="15" cy="15" r="12" stroke="#468A9A" stroke-width="2" fill="none"/>
+    <circle cx="15" cy="15" r="8" stroke="#468A9A" stroke-width="1" fill="none"/>
+    <circle cx="15" cy="15" r="4" stroke="#468A9A" stroke-width="1" fill="none"/>
+    <text x="15" y="35" text-anchor="middle" fill="#EEEEEE" font-size="8" font-family="monospace">React</text>
+  </g>
+  
+  <!-- Next.js Logo -->
+  <g transform="translate(50, 20)">
+    <rect x="5" y="5" width="20" height="20" rx="4" fill="#468A9A"/>
+    <path d="M10 10h10v2H10v-2zm0 4h10v2H10v-2zm0 4h8v2H10v-2z" fill="#EEEEEE"/>
+    <text x="15" y="35" text-anchor="middle" fill="#EEEEEE" font-size="8" font-family="monospace">Next.js</text>
+  </g>
+  
+  <!-- TypeScript Logo -->
+  <g transform="translate(90, 20)">
+    <rect x="5" y="5" width="20" height="20" rx="4" fill="#468A9A"/>
+    <path d="M10 10h10v2H10v-2zm0 4h10v2H10v-2zm0 4h6v2H10v-2z" fill="#EEEEEE"/>
+    <text x="15" y="35" text-anchor="middle" fill="#EEEEEE" font-size="8" font-family="monospace">TS</text>
+  </g>
+  
+  <!-- Node.js Logo -->
+  <g transform="translate(130, 20)">
+    <circle cx="15" cy="15" r="12" fill="#468A9A"/>
+    <path d="M8 8h14v14H8V8zm2 2v10h10V10H10z" fill="#EEEEEE"/>
+    <text x="15" y="35" text-anchor="middle" fill="#EEEEEE" font-size="8" font-family="monospace">Node</text>
+  </g>
+  
+  <!-- Python Logo -->
+  <g transform="translate(170, 20)">
+    <path d="M15 5c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm0 2c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8z" fill="#468A9A"/>
+    <text x="15" y="35" text-anchor="middle" fill="#EEEEEE" font-size="8" font-family="monospace">Python</text>
+  </g>
+</svg>

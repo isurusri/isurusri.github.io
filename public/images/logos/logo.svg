@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" width="120" height="100">
+  <!-- Left curly brace -->
+  <path d="M 25 35 Q 15 35 15 45 L 15 50 Q 15 55 10 55 Q 15 55 15 60 L 15 65 Q 15 75 25 75" 
+        stroke="#EEEEEE" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Blue dot above I -->
+  <circle cx="40" cy="20" r="4" fill="#468A9A"/>
+  
+  <!-- Letter I -->
+  <line x1="40" y1="35" x2="40" y2="75" stroke="#EEEEEE" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Letter A -->
+  <path d="M 55 75 L 65 35 L 75 75" 
+        stroke="#EEEEEE" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- A crossbar -->
+  <line x1="60" y1="60" x2="70" y2="60" stroke="#EEEEEE" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Right curly brace -->
+  <path d="M 85 35 Q 95 35 95 45 L 95 50 Q 95 55 100 55 Q 95 55 95 60 L 95 65 Q 95 75 85 75" 
+        stroke="#EEEEEE" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

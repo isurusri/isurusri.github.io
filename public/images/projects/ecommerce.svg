@@ -1,0 +1,41 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#0F0E0E"/>
+  <rect x="50" y="50" width="500" height="300" rx="8" fill="#541212"/>
+  
+  <!-- Header -->
+  <rect x="70" y="70" width="460" height="40" rx="4" fill="#468A9A"/>
+  <rect x="80" y="80" width="60" height="20" rx="2" fill="#EEEEEE"/>
+  <rect x="150" y="80" width="40" height="20" rx="2" fill="#EEEEEE"/>
+  <rect x="200" y="80" width="30" height="20" rx="2" fill="#EEEEEE"/>
+  
+  <!-- Product Grid -->
+  <rect x="70" y="130" width="100" height="80" rx="4" fill="#0F0E0E"/>
+  <rect x="80" y="140" width="80" height="40" rx="2" fill="#468A9A"/>
+  <rect x="80" y="190" width="60" height="10" rx="1" fill="#EEEEEE"/>
+  <rect x="80" y="205" width="40" height="10" rx="1" fill="#EEEEEE"/>
+  
+  <rect x="190" y="130" width="100" height="80" rx="4" fill="#0F0E0E"/>
+  <rect x="200" y="140" width="80" height="40" rx="2" fill="#468A9A"/>
+  <rect x="200" y="190" width="60" height="10" rx="1" fill="#EEEEEE"/>
+  <rect x="200" y="205" width="40" height="10" rx="1" fill="#EEEEEE"/>
+  
+  <rect x="310" y="130" width="100" height="80" rx="4" fill="#0F0E0E"/>
+  <rect x="320" y="140" width="80" height="40" rx="2" fill="#468A9A"/>
+  <rect x="320" y="190" width="60" height="10" rx="1" fill="#EEEEEE"/>
+  <rect x="320" y="205" width="40" height="10" rx="1" fill="#EEEEEE"/>
+  
+  <rect x="430" y="130" width="100" height="80" rx="4" fill="#0F0E0E"/>
+  <rect x="440" y="140" width="80" height="40" rx="2" fill="#468A9A"/>
+  <rect x="440" y="190" width="60" height="10" rx="1" fill="#EEEEEE"/>
+  <rect x="440" y="205" width="40" height="10" rx="1" fill="#EEEEEE"/>
+  
+  <!-- Footer -->
+  <rect x="70" y="230" width="460" height="100" rx="4" fill="#0F0E0E"/>
+  <rect x="80" y="240" width="100" height="20" rx="2" fill="#468A9A"/>
+  <rect x="80" y="270" width="200" height="15" rx="1" fill="#EEEEEE"/>
+  <rect x="80" y="290" width="150" height="15" rx="1" fill="#EEEEEE"/>
+  
+  <rect x="300" y="240" width="100" height="20" rx="2" fill="#468A9A"/>
+  <rect x="300" y="270" width="200" height="15" rx="1" fill="#EEEEEE"/>
+  <rect x="300" y="290" width="150" height="15" rx="1" fill="#EEEEEE"/>
+</svg>
