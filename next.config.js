@@ -34,7 +34,7 @@ const nextConfig = {
 
     // Production optimizations
     productionBrowserSourceMaps: false,
-    
+
     // Webpack configuration to exclude problematic files
     webpack: (config, { isServer }) => {
         if (!isServer) {
