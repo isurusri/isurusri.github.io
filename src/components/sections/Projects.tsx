@@ -44,7 +44,7 @@ const Projects = () => {
             image: '/images/projects/portfolio-website.svg',
             technologies: ['Next.js', 'Framer Motion', 'Tailwind CSS'],
             github: 'https://github.com/isurusri/isurusri.github.io',
-            live: 'https://www.sricode.com/',
+            live: 'https://www.sricode.com',
             featured: false,
         },
     ];

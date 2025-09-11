@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://isurusri.github.io
+Host: https://www.sricode.com
 
 # Sitemaps
-Sitemap: https://isurusri.github.io/sitemap.xml
+Sitemap: https://www.sricode.com/sitemap.xml

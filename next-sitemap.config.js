@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: process.env.SITE_URL || 'https://isurusri.github.io',
+    siteUrl: process.env.SITE_URL || 'https://www.sricode.com',
     generateRobotsTxt: true,
     generateIndexSitemap: false,
     robotsTxt: {
@@ -11,7 +11,7 @@ module.exports = {
             },
         ],
         additionalSitemaps: [
-            'https://isurusri.github.io/sitemap.xml',
+            'https://www.sricode.com/sitemap.xml',
         ],
     },
     exclude: ['/admin/*'],
