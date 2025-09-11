@@ -82,7 +82,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          branch: main
+          name: github-pages
           path: out
 
       - name: Setup Pages
