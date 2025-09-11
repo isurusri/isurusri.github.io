@@ -69,6 +69,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           branch: main
+          name: github-pages
           path: out
 
   deploy:
