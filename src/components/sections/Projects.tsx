@@ -41,7 +41,7 @@ const projects: Project[] = [
 
 export default function Projects() {
     return (
-        <section id="projects" className="py-28 border-t border-rule">
+        <section id="projects" className="py-20 md:py-28 border-t border-rule">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-x-8 gap-y-12">
                 <Reveal className="md:col-span-3">
                     <p className="label">02 — Selected work</p>

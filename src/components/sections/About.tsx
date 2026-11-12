@@ -12,7 +12,7 @@ const stack = ['Java', 'Spring Boot', 'Python', 'AI Agents', 'AWS', 'Docker', 'K
 
 export default function About() {
     return (
-        <section id="about" className="py-28 border-t border-rule">
+        <section id="about" className="py-20 md:py-28 border-t border-rule">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-x-8 gap-y-12">
                 <Reveal className="md:col-span-3">
                     <p className="label">01 — About</p>
@@ -63,14 +63,11 @@ export default function About() {
 
                     <Reveal>
                         <p className="label mb-4">Tools</p>
-                        <p className="text-muted leading-loose">
-                            {stack.map((s, i) => (
-                                <span key={s}>
-                                    <span className="text-ink">{s}</span>
-                                    {i < stack.length - 1 && <span className="mx-3 text-rule">/</span>}
-                                </span>
+                        <ul className="flex flex-wrap gap-x-5 gap-y-2">
+                            {stack.map((s) => (
+                                <li key={s} className="whitespace-nowrap">{s}</li>
                             ))}
-                        </p>
+                        </ul>
                     </Reveal>
                 </div>
             </div>

@@ -154,7 +154,7 @@ const Contact = () => {
         'w-full bg-transparent border-0 border-b border-rule py-3 text-ink placeholder:text-muted/60 focus:outline-none focus:border-accent transition-colors';
 
     return (
-        <section id="contact" className="py-28 border-t border-rule">
+        <section id="contact" className="py-20 md:py-28 border-t border-rule">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-x-8 gap-y-12">
                 <Reveal className="md:col-span-3">
                     <p className="label">03 — Contact</p>
