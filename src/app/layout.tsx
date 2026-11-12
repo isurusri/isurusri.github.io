@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
+import BackToTop from "@/components/ui/BackToTop";
 
 export const metadata: Metadata = {
   title: {
@@ -99,11 +100,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="antialiased">
+    <html lang="en">
+      <body>
         <Navigation />
         <main>{children}</main>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );

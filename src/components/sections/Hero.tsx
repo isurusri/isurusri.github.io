@@ -1,330 +1,47 @@
-'use client';
+const links = [
+    { label: 'GitHub', href: 'https://github.com/isurusri' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/isuru-abeykoon-sri1996/' },
+    { label: 'Email', href: 'mailto:isuru.srimal258@gmail.com' },
+];
 
-import { motion } from 'framer-motion';
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
-
-const Hero = () => {
-    const scrollToNext = () => {
-        const aboutSection = document.querySelector('#about');
-        if (aboutSection) {
-            aboutSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
+export default function Hero() {
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-            {/* Background gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary-dark via-primary-medium to-primary-dark" />
-
-            {/* Animated background elements */}
-            <div className="absolute inset-0 overflow-hidden">
-                {/* Large circular orb */}
-                <motion.div
-                    animate={{
-                        x: [0, 100, 0],
-                        y: [0, -100, 0],
-                        rotate: [0, 180, 360],
-                    }}
-                    transition={{
-                        duration: 20,
-                        repeat: Infinity,
-                        ease: "linear"
-                    }}
-                    className="absolute top-20 left-20 w-32 h-32 bg-primary-accent/20 rounded-full blur-xl"
-                />
-
-                {/* Medium circular orb */}
-                <motion.div
-                    animate={{
-                        x: [0, -100, 0],
-                        y: [0, 100, 0],
-                        rotate: [360, 180, 0],
-                    }}
-                    transition={{
-                        duration: 25,
-                        repeat: Infinity,
-                        ease: "linear"
-                    }}
-                    className="absolute bottom-20 right-20 w-40 h-40 bg-primary-light/10 rounded-full blur-xl"
-                />
-
-                {/* Square orb */}
-                <motion.div
-                    animate={{
-                        x: [0, 150, -80, 0],
-                        y: [0, -80, 150, 0],
-                        rotate: [0, 90, 180, 270, 360],
-                    }}
-                    transition={{
-                        duration: 18,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }}
-                    className="absolute top-1/3 right-1/4 w-24 h-24 bg-primary-medium/25 rounded-lg blur-lg"
-                />
-
-                {/* Triangle-like shape */}
-                <motion.div
-                    animate={{
-                        x: [0, -120, 60, 0],
-                        y: [0, 120, -60, 0],
-                        rotate: [0, 120, 240, 360],
-                    }}
-                    transition={{
-                        duration: 22,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }}
-                    className="absolute bottom-1/3 left-1/3 w-20 h-20 bg-primary-accent/15 transform rotate-45 blur-lg"
-                />
-
-                {/* Small circular orb */}
-                <motion.div
-                    animate={{
-                        x: [0, 200, -100, 0],
-                        y: [0, -200, 100, 0],
-                        scale: [1, 1.5, 0.8, 1],
-                    }}
-                    transition={{
-                        duration: 16,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }}
-                    className="absolute top-1/4 left-1/2 w-16 h-16 bg-primary-light/20 rounded-full blur-md"
-                />
-
-                {/* Diamond shape */}
-                <motion.div
-                    animate={{
-                        x: [0, 80, -160, 0],
-                        y: [0, -160, 80, 0],
-                        rotate: [0, 45, 90, 135, 180],
-                    }}
-                    transition={{
-                        duration: 24,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }}
-                    className="absolute bottom-1/4 right-1/3 w-18 h-18 bg-primary-medium/20 transform rotate-45 blur-lg"
-                />
-
-                {/* Hexagon-like shape */}
-                <motion.div
-                    animate={{
-                        x: [0, -150, 75, 0],
-                        y: [0, 75, -150, 0],
-                        rotate: [0, 60, 120, 180, 240, 300, 360],
-                    }}
-                    transition={{
-                        duration: 28,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }}
-                    className="absolute top-1/2 left-1/4 w-22 h-22 bg-primary-accent/10 rounded-lg blur-xl"
-                />
-
-                {/* Oval shape */}
-                <motion.div
-                    animate={{
-                        x: [0, 120, -60, 0],
-                        y: [0, -60, 120, 0],
-                        scaleX: [1, 1.3, 0.7, 1],
-                        scaleY: [1, 0.7, 1.3, 1],
-                    }}
-                    transition={{
-                        duration: 20,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }}
-                    className="absolute bottom-1/2 right-1/5 w-28 h-16 bg-primary-light/15 rounded-full blur-lg"
-                />
-            </div>
-
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-8">
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{
-                        duration: 1.2,
-                        ease: "easeOut"
-                    }}
-                    className="space-y-8"
+        <section id="home" className="min-h-screen flex flex-col justify-end pt-32 pb-16">
+            <div className="max-w-6xl mx-auto px-6 w-full">
+                <p className="label rise" style={{ animationDelay: '.1s' }}>
+                    Software Engineer — Backend, Cloud &amp; AI
+                </p>
+                <h1
+                    className="rise font-display font-light tracking-tight leading-[0.95] mt-8 text-[clamp(3.5rem,11vw,9.5rem)]"
+                    style={{ animationDelay: '.25s' }}
                 >
-                    {/* Greeting */}
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{
-                            delay: 0.3,
-                            duration: 0.8,
-                            ease: "easeOut"
-                        }}
-                        className="text-primary-accent text-lg md:text-xl font-medium"
-                    >
-                        Hello, I&apos;m
-                    </motion.p>
+                    Isuru
+                    <br />
+                    <em className="italic text-accent">Abeykoon</em>
+                </h1>
 
-                    {/* Name */}
-                    <motion.h1
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{
-                            delay: 0.5,
-                            duration: 1.0,
-                            ease: "easeOut"
-                        }}
-                        className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-primary-light"
+                <div className="mt-16 pt-8 border-t border-rule grid md:grid-cols-12 gap-8">
+                    <p
+                        className="rise md:col-span-6 font-display text-xl md:text-2xl leading-snug"
+                        style={{ animationDelay: '.5s' }}
                     >
-                        <motion.span
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{
-                                delay: 0.7,
-                                duration: 0.8,
-                                ease: "easeOut"
-                            }}
-                            className="block"
-                        >
-                            Isuru Abeykoon
-                        </motion.span>
-                        <motion.span
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{
-                                delay: 0.9,
-                                duration: 0.8,
-                                ease: "easeOut"
-                            }}
-                            className="block text-primary-accent"
-                        >
-                            Developer
-                        </motion.span>
-                    </motion.h1>
-
-                    {/* Description */}
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{
-                            delay: 1.1,
-                            duration: 0.8,
-                            ease: "easeOut"
-                        }}
-                        className="text-lg md:text-xl text-primary-light/80 max-w-3xl mx-auto leading-relaxed"
+                        I build scalable, intelligent and reliable software systems that turn complex
+                        problems into dependable, real-world solutions.
+                    </p>
+                    <ul
+                        className="rise md:col-start-10 md:col-span-3 space-y-2"
+                        style={{ animationDelay: '.65s' }}
                     >
-                        I build scalable, intelligent, and reliable software systems that transform complex challenges into impactful, real-world solutions.
-                    </motion.p>
-
-                    {/* CTA Buttons */}
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{
-                            delay: 1.3,
-                            duration: 0.8,
-                            ease: "easeOut"
-                        }}
-                        className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-                    >
-                        <motion.button
-                            whileHover={{
-                                scale: 1.05,
-                                boxShadow: "0 15px 35px rgba(70, 138, 154, 0.4)",
-                                y: -2
-                            }}
-                            whileTap={{ scale: 0.95 }}
-                            onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
-                            className="bg-primary-accent hover:bg-primary-accent/90 text-primary-dark px-8 py-3 rounded-lg font-semibold transition-all duration-500 shadow-lg hover:shadow-xl"
-                        >
-                            View My Work
-                        </motion.button>
-
-                        <motion.button
-                            whileHover={{
-                                scale: 1.05,
-                                boxShadow: "0 15px 35px rgba(70, 138, 154, 0.3)",
-                                y: -2
-                            }}
-                            whileTap={{ scale: 0.95 }}
-                            onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-                            className="border-2 border-primary-accent text-primary-accent hover:bg-primary-accent hover:text-primary-dark px-8 py-3 rounded-lg font-semibold transition-all duration-500 flex items-center space-x-2 group"
-                        >
-                            <motion.div
-                                animate={{
-                                    opacity: [1, 0.4, 1],
-                                    scale: [1, 1.3, 1]
-                                }}
-                                transition={{
-                                    duration: 2,
-                                    repeat: Infinity,
-                                    ease: "easeInOut"
-                                }}
-                                className="w-2 h-2 bg-green-500 rounded-full"
-                            />
-                            <span>Get In Touch</span>
-                        </motion.button>
-                    </motion.div>
-
-                    {/* Social Links */}
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{
-                            delay: 1.5,
-                            duration: 0.8,
-                            ease: "easeOut"
-                        }}
-                        className="flex justify-center space-x-6 pt-8"
-                    >
-                        {[
-                            { icon: Github, href: 'https://github.com/isurusri', label: 'GitHub' },
-                            { icon: Linkedin, href: 'https://www.linkedin.com/in/isuru-abeykoon-sri1996/', label: 'LinkedIn' },
-                            { icon: Mail, href: 'mailto:isuru.srimal258@gmail.com', label: 'Email' },
-                        ].map(({ icon: Icon, href, label }, index) => (
-                            <motion.a
-                                key={label}
-                                href={href}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{
-                                    delay: 1.7 + (index * 0.1),
-                                    duration: 0.6,
-                                    ease: "easeOut"
-                                }}
-                                whileHover={{
-                                    scale: 1.2,
-                                    rotate: 5,
-                                    y: -5
-                                }}
-                                whileTap={{ scale: 0.9 }}
-                                className="text-primary-light hover:text-primary-accent transition-all duration-300 p-2 rounded-full hover:bg-primary-accent/10"
-                                aria-label={label}
-                            >
-                                <Icon size={24} />
-                            </motion.a>
+                        {links.map((l) => (
+                            <li key={l.label}>
+                                <a href={l.href} className="link">
+                                    {l.label} <span aria-hidden>↗</span>
+                                </a>
+                            </li>
                         ))}
-                    </motion.div>
-                </motion.div>
+                    </ul>
+                </div>
             </div>
-
-            {/* Scroll indicator */}
-            <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.5, duration: 0.6 }}
-                onClick={scrollToNext}
-                className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-primary-light hover:text-primary-accent transition-colors duration-300"
-                aria-label="Scroll to next section"
-            >
-                <motion.div
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                >
-                    <ChevronDown size={32} />
-                </motion.div>
-            </motion.button>
         </section>
     );
-};
-
-export default Hero;
+}
